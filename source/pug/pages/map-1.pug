@@ -1,0 +1,18 @@
+extends ../components/base/layout
+
+block variables
+  - const title = "Карта 1" //- на страницах кроме главной используйте О нас — ProjectName
+  - const wrapperMods = ""
+  - const hasHeader = true
+  - const headerMods = ""
+  - const currentUrl = "map-1.html" //- для остальных страниц пишем пустую строку или индекс активного headerLinks
+  - const hasMap = true
+  - const hasPreloader = false
+
+block main
+  main
+    section.map-1
+      .container
+        h1 Задание по карте №1
+
+block modals

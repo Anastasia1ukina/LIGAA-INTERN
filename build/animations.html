@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>Список страниц</title>
+    <title>Анимации</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -27,63 +27,43 @@
 </symbol></svg>
     </div>
     <div class="wrapper">
-      <style>
-        .container {
-          padding-top: 50px;
-          padding-bottom: 50px;
-        }
-        
-        h1 {
-          font-size: 24px;
-          line-height: 28px;
-        }
-        
-        a {
-          color: rgb(10, 10, 175);
-        }
-        
-        li {
-          font-size: 18px;
-          line-height: 22px;
-          margin-bottom: 7px;
-        }
-        
-        img {
-          width: 100%;
-          max-width: 300px;
-          height: auto;
-          display: block;
-          margin-bottom: 40px;
-        }
-        
-        @media (max-width: 768px) {
-          .container {
-            padding-top: 20px;
-            padding-bottom: 20px;
-          }
-        
-          ol {
-            padding-left: 20px;
-          }
-        
-          ol li {
-            margin-bottom: 15px;
-          }
-        }
-        
-      </style>
+      <header class="header">
+        <div class="container"><span class="header__logo">Логотип
+            <svg width="362" height="67" aria-hidden="true">
+              <use xlink:href="#logo"></use>
+            </svg></span>
+          <nav class="main-nav">
+            <button class="main-nav__toggle btn-reset" type="button" aria-label="Переключатель отображения меню" aria-pressed="false"></button>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><span class="main-nav__link is-active">Анимации</span>
+                </li>
+                <li class="main-nav__item"><a class="main-nav__link" href="map-1.html">Карта 1</a>
+                </li>
+                <li class="main-nav__item"><a class="main-nav__link" href="map-2.html">Карта 2</a>
+                </li>
+                <li class="main-nav__item"><a class="main-nav__link" href="map-3.html">Карта 3</a>
+                </li>
+                <li class="main-nav__item"><a class="main-nav__link" href="map-4.html">Карта 4</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
       <main>
-        <div class="container"><img src="https://via.placeholder.com/300x150" width="300" alt="Логотип проекта">
-          <h1>Список страниц</h1>
-          <ol>
-            <li><a href="animations.html">Анимации — animations.html</a></li>
-            <li><a href="map-1.html">Карта - 1 — map-1.html</a></li>
-            <li><a href="map-2.html">Карта - 2 — map-2.html</a></li>
-            <li><a href="map-3.html">Карта - 3 — map-3.html</a></li>
-            <li><a href="map-4.html">Карта - 4 — map-4.html</a></li>
-          </ol>
+        <div class="intro">
+          <div class="container">
+            <p style="margin-top: 40px;">Текст&nbsp;с&nbsp;мнемониками</p>
+            <p style="margin-top: 40px;">Пример использования +img()</p>
+            <p style="margin-bottom: 40px;"><img src="img/content/placeholder.png" srcset="img/content/placeholder@2x.png 2x" width="120" height="120" alt="Пример">
+            </p>
+          </div>
         </div>
       </main>
+      <footer class="footer">
+        <div class="container"></div>
+      </footer>
     </div>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
