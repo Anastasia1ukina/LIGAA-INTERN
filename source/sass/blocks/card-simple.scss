@@ -1,0 +1,10 @@
+.card-simple {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 20px;
+  min-height: 115px;
+  border-radius: 10px;
+  background-color: $color-grey-button;
+  text-align: end;
+}

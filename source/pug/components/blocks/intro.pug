@@ -1,10 +1,41 @@
-mixin intro()
-  .intro
-    //- вставлять блоки во внешний контейнер неверно
-    //- все блоки содержат в себе container без доп класса tutorial__wrapper
-    .container
-      p(style="margin-top: 40px;") Текст&nbsp;с&nbsp;мнемониками
+-
+  const cards = [
+    {
+      href: '#menu',
+      text: 'Меню',
+    },
+    {
+      href: '#loader',
+      text: 'Лоадер',
+    },
+    {
+      href: '#first-screen',
+      text: 'Сборка<br>первого экрана',
+    },
+    {
+      href: '#show-on-scroll',
+      text: 'Появление блоков',
+    },
+    {
+      href: '#parallax',
+      text: 'Параллакс',
+    },
+    {
+      href: '#scroll-slider',
+      text: 'Слайдер<br>по скроллу',
+    },
+  ]
 
-      p(style="margin-top: 40px;") Пример использования +img()
-      p(style="margin-bottom: 40px;")
-        +img("content", "placeholder", "png", 120, 120, "Пример")
+mixin intro()
+  section.intro(id="intro")
+    .intro__sticky
+      .container
+        .intro__heading
+          h1.intro__title.title(data-splitting) Задачки<br>на прокачку
+          p.intro__description(data-splitting) Задачи на интерфейсную логику,<br> которые часто встречаются<br> на реальных проектах
+        .intro__cards
+            each item in cards
+              a.card-simple(href=`${item.href}` data-move-to=`${item.href}`)
+                h2.card-simple__title.title.title--h3!=`${item.text}`
+      .intro__bg
+        video(src="../../../video/background.mp4" alt="waaaavee" autoplay="true" muted="true" loop="" playsinline="")

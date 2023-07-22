@@ -27,19 +27,21 @@ mixin header(headerMods, currentUrl)
     .container
       if(currentUrl === "animations.html")
         //- lighthouse снимает 10 баллов SEO за <a> без href
-        span.header__logo Логотип
+        span.header__logo
           +icon('logo', 362, 67)
       else
-        a.header__logo(href="animations.html", aria-label="Переход на главную") Логотип
+        a.header__logo(href="animations.html", aria-label="Переход на главную")
           +icon("logo", 362, 67)
-      nav.main-nav
-        button.main-nav__toggle.btn-reset(type="button", aria-label="Переключатель отображения меню", aria-pressed="false")
-        .main-nav__wrapper
-          ul.main-nav__list
-            each link in headerLinks
-              - const activeState = currentUrl === link.href
-              li.main-nav__item
-                if(activeState)
-                  span.main-nav__link.is-active=link.text
-                else
-                  a.main-nav__link(href=link.href)=link.text
+      button.header__toggle(data-menu="toggle" type="button" aria-label="Переключатель отображения меню")
+
+    nav.main-nav
+      button.main-nav__toggle.btn-reset(type="button", aria-label="Переключатель отображения меню", aria-pressed="false")
+      .main-nav__wrapper
+        ul.main-nav__list
+          each link in headerLinks
+            - const activeState = currentUrl === link.href
+            li.main-nav__item
+              if(activeState)
+                span.main-nav__link.is-active=link.text
+              else
+                a.main-nav__link(href=link.href)=link.text

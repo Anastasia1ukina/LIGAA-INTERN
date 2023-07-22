@@ -28,38 +28,52 @@
     </div>
     <div class="wrapper">
       <header class="header">
-        <div class="container"><span class="header__logo">Логотип
+        <div class="container"><span class="header__logo">
             <svg width="362" height="67" aria-hidden="true">
               <use xlink:href="#logo"></use>
             </svg></span>
-          <nav class="main-nav">
-            <button class="main-nav__toggle btn-reset" type="button" aria-label="Переключатель отображения меню" aria-pressed="false"></button>
-            <div class="main-nav__wrapper">
-              <ul class="main-nav__list">
-                <li class="main-nav__item"><span class="main-nav__link is-active">Анимации</span>
-                </li>
-                <li class="main-nav__item"><a class="main-nav__link" href="map-1.html">Карта 1</a>
-                </li>
-                <li class="main-nav__item"><a class="main-nav__link" href="map-2.html">Карта 2</a>
-                </li>
-                <li class="main-nav__item"><a class="main-nav__link" href="map-3.html">Карта 3</a>
-                </li>
-                <li class="main-nav__item"><a class="main-nav__link" href="map-4.html">Карта 4</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+          <button class="header__toggle" data-menu="toggle" type="button" aria-label="Переключатель отображения меню"></button>
         </div>
+        <nav class="main-nav">
+          <button class="main-nav__toggle btn-reset" type="button" aria-label="Переключатель отображения меню" aria-pressed="false"></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><span class="main-nav__link is-active">Анимации</span>
+              </li>
+              <li class="main-nav__item"><a class="main-nav__link" href="map-1.html">Карта 1</a>
+              </li>
+              <li class="main-nav__item"><a class="main-nav__link" href="map-2.html">Карта 2</a>
+              </li>
+              <li class="main-nav__item"><a class="main-nav__link" href="map-3.html">Карта 3</a>
+              </li>
+              <li class="main-nav__item"><a class="main-nav__link" href="map-4.html">Карта 4</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </header>
       <main>
-        <div class="intro">
-          <div class="container">
-            <p style="margin-top: 40px;">Текст&nbsp;с&nbsp;мнемониками</p>
-            <p style="margin-top: 40px;">Пример использования +img()</p>
-            <p style="margin-bottom: 40px;"><img src="img/content/placeholder.png" srcset="img/content/placeholder@2x.png 2x" width="120" height="120" alt="Пример">
-            </p>
+        <section class="intro" id="intro">
+          <div class="intro__sticky">
+            <div class="container">
+              <div class="intro__heading">
+                <h1 class="intro__title title" data-splitting>Задачки<br>на прокачку</h1>
+                <p class="intro__description" data-splitting>Задачи на интерфейсную логику,<br> которые часто встречаются<br> на реальных проектах</p>
+              </div>
+              <div class="intro__cards"><a class="card-simple" href="#menu" data-move-to="#menu">
+                  <h2 class="card-simple__title title title--h3">Меню</h2></a><a class="card-simple" href="#loader" data-move-to="#loader">
+                  <h2 class="card-simple__title title title--h3">Лоадер</h2></a><a class="card-simple" href="#first-screen" data-move-to="#first-screen">
+                  <h2 class="card-simple__title title title--h3">Сборка<br>первого экрана</h2></a><a class="card-simple" href="#show-on-scroll" data-move-to="#show-on-scroll">
+                  <h2 class="card-simple__title title title--h3">Появление блоков</h2></a><a class="card-simple" href="#parallax" data-move-to="#parallax">
+                  <h2 class="card-simple__title title title--h3">Параллакс</h2></a><a class="card-simple" href="#scroll-slider" data-move-to="#scroll-slider">
+                  <h2 class="card-simple__title title title--h3">Слайдер<br>по скроллу</h2></a>
+              </div>
+            </div>
+            <div class="intro__bg">
+              <video src="../../../video/background.mp4" alt="waaaavee" autoplay="true" muted="true" loop="" playsinline=""></video>
+            </div>
           </div>
-        </div>
+        </section>
       </main>
       <footer class="footer">
         <div class="container"></div>
