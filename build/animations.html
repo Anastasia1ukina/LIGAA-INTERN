@@ -74,6 +74,90 @@
             </div>
           </div>
         </section>
+        <section class="section" id="menu">
+          <div class="container">
+            <div class="content-block">
+              <h2>Меню тз</h2>
+              <p><b>Анимация появления</b></p>
+              <p>При открытии: Сначала появляется меню, затем внутренний контент. Пункты внутри появляются с разной задержкой - эффект "лесенки"</p>
+              <p>При закрытии: Внутренний контент исчезает до закрытия меню, без задержки</p>
+              <p>Анимация меню на данном сайте реализована с помощью css (это база). Можете так же реализовать анимацию с помощью gsap</p>
+              <p><b>JS</b></p>
+              <p>Для блокировки скролла используется window.scrollLock</p>
+              <p>Должны быть реализованы функции или методы для открытия и закрытия меню, которые можно использовать в других модулях</p>
+            </div>
+          </div>
+        </section>
+        <section class="section" id="loader">
+          <div class="container">
+            <div class="content-block">
+              <h2>Лоадер тз</h2>
+              <p>Анимация лоадера произвольная, можно использовать css keyframes или gsap</p>
+              <p>После загрузки страницы мы всегда находимся вверху страницы (не должно быть видно скачка)</p>
+              <p>Скролл страницы заблокирован во время загрузки</p>
+            </div>
+          </div>
+        </section>
+        <section class="section" id="first-screen">
+          <div class="container">
+            <div class="content-block">
+              <h2>Сборка первого экрана тз</h2>
+              <p>Для анимации используйте неколько разных css свойств и небольшие задержки</p>
+              <p>Для построчной или посимвольной анимации текста используйте <a href="https://splitting.js.org" target="_blank">splitting.js</a> (пример: интро этого сайта)</p>
+            </div>
+          </div>
+        </section>
+        <section class="section" id="show-on-scroll">
+          <div class="container">
+            <div class="content-block">
+              <h2>Появление блоков</h2>
+              <p>доскролили и вжух!</p>
+              <p>Можно делать через классы и высчитывать по скроллу getBoundingClientRect каждого блока, но гораздо проще использовать ScrollTrigger.batch()</p>
+              <div class="section__cards-container">
+                <div class="card-simple card-simple--centered card-simple--dark" data-animate="fade">
+                  <p class="title title--h3">fade</p>
+                </div>
+                <div class="card-simple card-simple--centered card-simple--dark" data-animate="fade">
+                  <p class="title title--h3">fade</p>
+                </div>
+                <div class="card-simple card-simple--centered card-simple--dark" data-animate="fadeIn">
+                  <p class="title title--h3">fade-in</p>
+                </div>
+                <div class="card-simple card-simple--centered card-simple--dark" data-animate="fadeIn">
+                  <p class="title title--h3">fade-in</p>
+                </div>
+                <div class="card-simple card-simple--centered card-simple--dark" data-animate="fadeScale">
+                  <p class="title title--h3">fade-scale</p>
+                </div>
+                <div class="card-simple card-simple--centered card-simple--dark" data-animate="fadeScale">
+                  <p class="title title--h3">fade-scale</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section" id="parallax">
+          <div class="container">
+            <div class="content-block">
+              <h2>Параллакс по скроллу</h2>
+              <p>Эффекты, которые постоянно срабатывают по скроллу<br>Скроллим скроллим и вжух вжух вжух!</p>
+              <div class="section__cards-container">
+                <div class="card-simple card-simple--centered card-simple--dark" data-parallax="fadeScale">
+                  <p class="title title--h3">fade-scale</p>
+                </div>
+                <div class="card-simple card-simple--centered card-simple--dark" data-parallax="fadeScale">
+                  <p class="title title--h3">fade-scale</p>
+                </div>
+                <div class="card-simple card-simple--centered card-simple--dark" data-parallax="transformY">
+                  <p class="title title--h3">transform y</p>
+                </div>
+                <div class="card-simple card-simple--centered card-simple--dark" data-parallax="transformY">
+                  <p class="title title--h3">transform y</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <footer class="footer">
         <div class="container"></div>

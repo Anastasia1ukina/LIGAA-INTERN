@@ -1,0 +1,18 @@
+mixin blocks(data)
+  each item in tasks
+    section.section(id=`${item.id}`)
+      .container
+        .content-block
+          h2!=item.title
+          each description in item.description
+            p!=description
+          if (item.cardsBlocks)
+            .section__cards-container
+              each card in item.cardsBlocks
+                .card-simple.card-simple--centered.card-simple--dark(data-animate=`${card.dataValue}`)
+                  p.title.title--h3!=card.text
+          if (item.cardsParallax)
+            .section__cards-container
+              each card in item.cardsParallax
+                .card-simple.card-simple--centered.card-simple--dark(data-parallax=`${card.dataValue}`)
+                  p.title.title--h3!=card.text

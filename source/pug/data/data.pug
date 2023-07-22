@@ -1,0 +1,93 @@
+-
+  const tasks = [
+    {
+      id: 'menu',
+      title: 'Меню тз',
+      description: [
+        '<b>Анимация появления</b>',
+        'При открытии: Сначала появляется меню, затем внутренний контент. Пункты внутри появляются с разной задержкой - эффект "лесенки"',
+        'При закрытии: Внутренний контент исчезает до закрытия меню, без задержки',
+        'Анимация меню на данном сайте реализована с помощью css (это база). Можете так же реализовать анимацию с помощью gsap',
+        '<b>JS</b>',
+        'Для блокировки скролла используется window.scrollLock',
+        'Должны быть реализованы функции или методы для открытия и закрытия меню, которые можно использовать в других модулях',
+      ]
+    },
+    {
+      id: 'loader',
+      title: 'Лоадер тз',
+      description: [
+        'Анимация лоадера произвольная, можно использовать css keyframes или gsap',
+        'После загрузки страницы мы всегда находимся вверху страницы (не должно быть видно скачка)',
+        'Скролл страницы заблокирован во время загрузки',
+      ]
+    },
+    {
+      id: 'first-screen',
+      title: 'Сборка первого экрана тз',
+      description: [
+        'Для анимации используйте неколько разных css свойств и небольшие задержки',
+        'Для построчной или посимвольной анимации текста используйте <a href="https://splitting.js.org" target="_blank">splitting.js</a> (пример: интро этого сайта)',
+      ]
+    },
+    {
+      id: 'show-on-scroll',
+      title: 'Появление блоков',
+      description: [
+        'доскролили и вжух!',
+        'Можно делать через классы и высчитывать по скроллу getBoundingClientRect каждого блока, но гораздо проще использовать ScrollTrigger.batch()',
+      ],
+      cardsBlocks: [
+        {
+          dataValue: 'fade',
+          text: 'fade'
+        },
+        {
+          dataValue: 'fade',
+          text: 'fade'
+        },
+        {
+          dataValue: 'fadeIn',
+          text: 'fade-in'
+        },
+        {
+          dataValue: 'fadeIn',
+          text: 'fade-in'
+        },
+        {
+          dataValue: 'fadeScale',
+          text: 'fade-scale'
+        },
+        {
+          dataValue: 'fadeScale',
+          text: 'fade-scale'
+        }
+      ]
+    },
+    {
+      id: 'parallax',
+      title: 'Параллакс по скроллу',
+      description: [
+        'Эффекты, которые постоянно срабатывают по скроллу<br>Скроллим скроллим и вжух вжух вжух!'
+      ],
+      cardsParallax: [
+        {
+          dataValue: 'fadeScale',
+          text: 'fade-scale'
+        },
+        {
+          dataValue: 'fadeScale',
+          text: 'fade-scale'
+        },
+        {
+          dataValue: 'transformY',
+          text: 'transform y'
+        },
+        {
+          dataValue: 'transformY',
+          text: 'transform y'
+        },
+      ],
+      dataName: 'parallax'
+    }
+  ]

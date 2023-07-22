@@ -65,7 +65,9 @@
     "node": ">=16.15.1"
   },
   "dependencies": {
+    "gsap": "^3.12.2",
     "iphone-inline-video": "^2.2.2",
+    "scroll-lock": "^2.1.5",
     "splitting": "^1.0.6"
   }
 }
